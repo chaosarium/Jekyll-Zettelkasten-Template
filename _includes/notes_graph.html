@@ -6,7 +6,7 @@
 
   .nodes circle {
     cursor: pointer;
-    fill: #8b88e6;
+    fill: #777777;
     transition: all 0.15s ease-out;
   }
 
@@ -41,7 +41,7 @@
 <div id="graph-wrapper">
   <script>
     const MINIMAL_NODE_SIZE = 8;
-    const MAX_NODE_SIZE = 12;
+    const MAX_NODE_SIZE = 15;
     const ACTIVE_RADIUS_FACTOR = 1.5;
     const STROKE = 1;
     const FONT_SIZE = 16;
@@ -162,7 +162,7 @@
     const graphWrapper = document.getElementById('graph-wrapper')
     const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
-    element.setAttribute("height", window.innerHeight * 0.8);
+    element.setAttribute("height", window.innerHeight * 0.52);
     graphWrapper.appendChild(element);
 
     const reportWindowSize = () => {
